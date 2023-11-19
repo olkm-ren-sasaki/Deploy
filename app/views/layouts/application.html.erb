@@ -14,9 +14,12 @@
     <header>
       <% if user_signed_in? %>
         <li>
-          <%= link_to "Log out", destroy_user_session_path, method: :delete %>
+          <h1><%= link_to "Log out", destroy_user_session_path, method: :delete %></h1>
         </li>
       <% else %>
+        <li>
+          <%= link_to "Home", top_path %>
+        </li>
         <li>
           <%= link_to "About", about_path %>
         </li>
