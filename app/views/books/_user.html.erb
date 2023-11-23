@@ -1,9 +1,17 @@
 <h1>User info</h1>
-<div>
-<%= image_tag user.get_profile_image(100,100) %>
-<h3>name  <%= user.name %></h3>
-<h3>introduction  <%= user.introduction %></h3>
+ <%= image_tag user.get_profile_image(100,100) %>
+<table class="table">
+ <tr>
+  <th>name</th>  
+  <th><%= user.name %></th>
+ </tr>
+ <tr>
+  <th>introduction</th>  
+  <th><%= user.introduction %></th>
+ </tr>
+</table>
 <% if user == current_user %>
- <p><%= link_to "edit", edit_user_path(user) %></p>
+<div class="row">
+  <%= link_to "edit", edit_user_path(user), class: "btn btn-outline-secondary btn-block" %>
+  <i class="fas fa-user-cog"></i></div>
 <% end %>
-</div>
