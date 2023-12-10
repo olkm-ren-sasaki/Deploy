@@ -13,3 +13,10 @@
  *= require_tree .
  *= require_self
  */
+.deploy_image {
+  background-image: image-url("blue.jpeg");
+  /*background-image: url('blue.jpeg');*/
+  background-position: center;
+  width: 200px;
+  height: 200px;
+}

@@ -7,6 +7,7 @@
     <%= csp_meta_tag %>
 
     <script src="https://kit.fontawesome.com/e95088da69.js" crossorigin="anonymous"></script>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -75,6 +76,7 @@
 
     <%= yield %>
   </body>
+  <div class="deploy_image"></div>
   <footer>
     <div class="container mt-5">
       <div class="row">
